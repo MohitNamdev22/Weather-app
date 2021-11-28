@@ -69,9 +69,9 @@ function renderError() {
   wetherDataDiv.style.display = "flex"
   wetherDataDiv.innerHTML = `<h1 class="error">Something went wrong</h1>`
 }
-// function renderSpinner() {
-//     // wetherDataDiv.style.display = "flex"
-//     getWeatherData.innerHTML = `<div class="spinner">
-// <img src="https://raw.githubusercontent.com/bilal-23/Weather-App/75905d0c16854d4bbaa5f7b728be797fee653f49/src/img/loading.svg" alt="">
-// </div> `
-// }
+function renderSpinner() {
+    wetherDataDiv.style.display = "flex"
+    getWeatherData.innerHTML = `<div class="spinner">
+<img src="https://raw.githubusercontent.com/bilal-23/Weather-App/75905d0c16854d4bbaa5f7b728be797fee653f49/src/img/loading.svg" alt="">
+</div> `
+}
