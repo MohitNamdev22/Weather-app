@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
 * {
   margin: 0;
@@ -11,13 +11,17 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family:'Crimson Pro', serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  color: white;
+  color: black;
+  background: rgb(54,248,251);
+  background: linear-gradient(0deg, rgba(54,248,251,0.5329482134650736) 18%, rgba(45,60,253,0.5357493339132529) 100%);
+  margin: 180px 100px;
 }
+
 .weather-app-container {
   display: flex;
   flex-direction: column;
@@ -26,51 +30,55 @@ body {
   margin: 0 auto;
   padding: 5rem;
   /* width: 300px; */
-  min-height: 500px;
-  background-color: #292929;
-  box-shadow: 10px 10px #ccc, 10px 10px #ccc;
+  
+  background-color:rgba(182, 250, 143, 0.808);
+  box-shadow: 10px 10px rgba(39, 104, 1, 0.397), 10px 10px rgba(37, 99, 2, 0.397);
 }
 
-.earth-icon {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.weather-gif{
+    height: 150px;
+    width: 150px;
+    
 }
-.earth-image {
-  width: 30%;
-}
-
 .search-input-wrapper {
   display: flex;
   flex-direction: row;
+  gap: 10px;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+
   /* gap: 2px; */
   width: 100%;
+  
+
 }
 
 .search-input {
   width: 70%;
-  padding: 1rem 2rem;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 20px;
   border: none;
+  padding-left: 15px;
+  letter-spacing: 2.5px;
+  font-family:'Happy Monkey';
+  font-weight: 700px;
+  font-size: 20px;
 }
 
 .search-btn {
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 40px;
   height: 40px;
+  font-size: 20px;
 }
+
 
 .weather-data {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 5rem 0;
+  font-family: 'Crimson Pro';
 }
 .data-left,
 .data-right {
@@ -78,20 +86,30 @@ body {
   width: 100%;
 }
 .data-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem; 
+    margin-left: 50%;
+    margin-top: -8pc;
 }
 .left-img img {
   width: 15rem;
+  margin-top: 30px;
 }
 .data-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
+    align-items: flex-start; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 5rem; 
+    margin-top: 60%;
+    border: 4px solid blueviolet;
+    border-radius: 10px;
+    padding: 2px 5px;
 }
+
+
 .data-right p {
   font-size: 2rem;
   font-weight: 600;
@@ -110,6 +128,7 @@ body {
 .data-city p {
   font-size: 4rem;
 }
+
 .error {
   text-align: center;
   margin: 0 auto;
